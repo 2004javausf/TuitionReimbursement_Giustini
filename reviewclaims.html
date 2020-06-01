@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Review pending claims</title></head>
+    <link rel="stylesheet" type="text/css" href="C:/Users/mauri/Desktop/Revature/Javascript/bootstrap/css/bootstrap.css"/>
+    <body style="background-color: burlywood;">
+        <header><img src="C:/Users/mauri/Desktop/MGCoLogo.png" alt="MGCo logo" style="width:364px;height:177px;"/></header>
+    </br>
+	<h2 style="font-weight: bold; text-align: center;">Pending Reimbursement Claims</h2>
+    </br>
+    </br>
+    <div>
+	<p id='showData'></p>
+    
+    <p id='msg'></p>
+    </div>
+    <div class = "approve" style="text-align: center;">
+		<form action="approve"  method="POST" id="approveRim">
+		<p class="order">Approve by submitting the claim ID below:</p>
+		<input type="text" name="userName" placeholder="ClaimID" required>
+		<input type="submit" value="Submit" id="trmsApprove">
+		</form>
+	</div>
+	    <div class = "reject" style="text-align: center;">
+		<form action="reject"  method="POST" id="rejectRim">
+		<p class="order">Deny by submitting the claim ID below:</p>
+		<input type="text" name="rejection" placeholder="ClaimID" required>
+		<input type="submit" value="Submit" id="trmsReject">
+		</form>
+    </div>
+</br>
+</br>
+</br>
+    <div style="text-align: center;">
+                <a href="home.html">Return to Home</a>
+            </br>
+				<a href="index.html">Log Out</a>
+        </div>
+    <script type="text/javascript" src="reviewclaims.js"></script>    
+</body>
+</html>
